@@ -56,40 +56,7 @@ namespace GetOntario
                     }
 
                 }
-                //while (!reader.EndOfStream)
-                //{
-                //    i++;
-                //    var line = reader.ReadLine();
-                //    var values = line.Split(',');
-
-                //    if (i != 0)
-                //    {
-                //        //try
-                //        //{
-                //            eachCase.ControlID = Guid.NewGuid();
-                //            eachCase.ACCURATE_EPISODE_DATE = Convert.ToDateTime(values[1]);
-                //            eachCase.AgeGroup = values[5];
-                //            eachCase.CLIENT_GENDER = values[6];
-                //            eachCase.CASE_ACQUISITIONINFO = values[7];
-                //            eachCase.OUTCOME1 = values[8];
-                //            int length = values.Length;
-                            
-                //            eachCase.Reporting_PHU = values[length-7];
-                //            eachCase.Reporting_PHU_Address = values[length-6];
-                //            eachCase.Reporting_PHU_City = values[length-5];
-                //            eachCase.Reporting_PHU_Postal_Code = values[length-4];
-                //            eachCase.Reporting_PHU_Website = values[length-3];
-                //            eachCase.Reporting_PHU_Latitude = Convert.ToDecimal(values[length-2]);
-                //            eachCase.Reporting_PHU_Longitude = Convert.ToDecimal(values[length-1]);
-                          
-                            
-                //            UploadData(eachCase);
-                //        //}
-                //        //catch { }
-                       
-                //    }
-                    
-                //}
+               
             }
 
         }
@@ -97,7 +64,7 @@ namespace GetOntario
         static void UploadData(Ontario eachCase)
         {
             // upload SQL
-            string ConString = "data source=192.67.34.168;initial catalog=COVID;user id=jerry;password=jerry;connect timeout=30;encrypt=False;trustservercertificate=False;applicationintent=ReadWrite;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
+            string ConString = "please update";
             using (SqlConnection cn = new SqlConnection(ConString))
             {
                 cn.Open();
@@ -127,49 +94,13 @@ namespace GetOntario
                 }
             }
 
-            // upload SQL
-            //string ConString = "data source=jerry-main;initial catalog=COVID;integrated security=True;MultipleActiveResultSets=True;";
-            //using (SqlConnection cn = new SqlConnection(ConString))
-            //{
-            //    cn.Open();
-            //    try {
-            //        StringBuilder q = new StringBuilder();
-            //        q.Append("INSERT INTO [Ontario]( [ControlID], [ACCURATE_EPISODE_DATE], [AgeGroup], [CLIENT_GENDER], [CASE_ACQUISITIONINFO], [OUTCOME1], [Reporting_PHU], [Reporting_PHU_Address],");
-            //        q.Append("[Reporting_PHU_City],[Reporting_PHU_Postal_Code],[Reporting_PHU_Website],[Reporting_PHU_Latitude],[Reporting_PHU_Longitude] ) VALUES (");
-            //        q.Append("'" + eachCase.ControlID + "',");
-            //        q.Append("'" + eachCase.ACCURATE_EPISODE_DATE.ToShortDateString() + "',");
-            //        q.Append("'" + eachCase.AgeGroup + "',");
-            //        q.Append("'" + eachCase.CLIENT_GENDER + "',");
-            //        q.Append("'" + eachCase.CASE_ACQUISITIONINFO + "',");
-            //        q.Append("'" + eachCase.OUTCOME1 + "',");
-            //        q.Append("'" + eachCase.Reporting_PHU + "',");
-            //        q.Append("'" + eachCase.Reporting_PHU_Address + "',");
-            //        q.Append("'" + eachCase.Reporting_PHU_City + "',");
-            //        q.Append("'" + eachCase.Reporting_PHU_Postal_Code + "',");
-            //        q.Append("'" + eachCase.Reporting_PHU_Website + "',");
-            //        q.Append(eachCase.Reporting_PHU_Latitude + ",");
-            //        q.Append(eachCase.Reporting_PHU_Longitude + ")");
-            //        string query = q.ToString();
-            //        SqlCommand cmd = new SqlCommand(query, cn);
-            //        cmd.ExecuteNonQuery();
-            //    }
-            //    catch(SqlException ex)
-            //    {
-            //        Console.WriteLine("Inner Exception: " + ex.Message);
-            //        Console.WriteLine();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Console.WriteLine(ex.Message);
-            //    }
-            //}
 
         }
 
         static void DeleteData()
         {
             // upload SQL
-            string ConString = "data source=192.67.34.168;initial catalog=COVID;user id=jerry;password=jerry;connect timeout=30;encrypt=False;trustservercertificate=False;applicationintent=ReadWrite;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
+            string ConString = "please update";
             using (SqlConnection cn = new SqlConnection(ConString))
             {
                 cn.Open();
