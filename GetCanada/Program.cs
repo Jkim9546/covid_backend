@@ -65,7 +65,7 @@ namespace GetCanada
         static void UploadData(Canada eachCase)
         {
             // upload SQL
-            string ConString = "data source=192.67.34.168;initial catalog=COVID;user id=jerry;password=jerry;connect timeout=30;encrypt=False;trustservercertificate=False;applicationintent=ReadWrite;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
+            string ConString = "please upate";
             using (SqlConnection cn = new SqlConnection(ConString))
             {
                 cn.Open();
@@ -106,7 +106,7 @@ namespace GetCanada
         static void DeleteData()
         {
             // upload SQL
-            string ConString = "data source=192.67.34.168;initial catalog=COVID;user id=jerry;password=jerry;connect timeout=30;encrypt=False;trustservercertificate=False;applicationintent=ReadWrite;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
+            string ConString = "please upate";
             using (SqlConnection cn = new SqlConnection(ConString))
             {
                 cn.Open();
