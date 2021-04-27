@@ -54,7 +54,7 @@ namespace GetVaccine
         static void UploadData(Vaccine eachCase)
         {
             // upload SQL
-            string ConString = "data source=192.67.34.168;initial catalog=COVID;user id=jerry;password=jerry;connect timeout=30;encrypt=False;trustservercertificate=False;applicationintent=ReadWrite;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
+            string ConString = "pleae update";
             using (SqlConnection cn = new SqlConnection(ConString))
             {
                 cn.Open();
@@ -93,7 +93,7 @@ namespace GetVaccine
         static void DeleteData()
         {
             // upload SQL
-            string ConString = "data source=192.67.34.168;initial catalog=COVID;user id=jerry;password=jerry;connect timeout=30;encrypt=False;trustservercertificate=False;applicationintent=ReadWrite;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
+            string ConString = "pleae update";
             using (SqlConnection cn = new SqlConnection(ConString))
             {
                 cn.Open();
