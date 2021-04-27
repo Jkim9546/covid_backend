@@ -1,0 +1,32 @@
+# You need to Desrialize to get the objects because all data will be sent by serialized
+
+api/worlds
+api/Worlds/{Country}/All
+api/Worlds/{Country}/Confirmed
+api/Worlds/{Country}/Recovered
+api/Worlds/{Country}/Deaths
+api/Worlds/{Country}/{reportedDate}/All
+api/Worlds/{Country}/{reportedDate}/Confirmed       ex) api/Worlds/canada/2021-3-3/Confirmed 
+api/Worlds/{Country}/{reportedDate}/Recovered
+api/Worlds/{Country}/{reportedDate}/Deaths
+
+"[{\"ControlID\":\"e6416c22-faf4-41bf-9d48-0e2969884596\",\"Province_State\":\"Grand Princess\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":13},{\"ControlID\":\"0abdf90b-af67-40ea-8d2f-0e513552b810\",\"Province_State\":\"Ontario\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":309022},{\"ControlID\":\"f8648d17-9b64-4f2d-8709-0ef886ca20c8\",\"Province_State\":\"Yukon\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":72},{\"ControlID\":\"1be06930-afb6-4aba-b781-28b2123d79fe\",\"Province_State\":\"Alberta\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":134454},{\"ControlID\":\"4117723a-811b-4de6-8462-29d3f4cdf921\",\"Province_State\":\"British Columbia\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":81909},{\"ControlID\":\"c7a3791a-71a7-41f0-944b-3581fa403c54\",\"Province_State\":\"Nova Scotia\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":1646},{\"ControlID\":\"d49e189a-1fd2-42fd-9b9d-507e3b930faa\",\"Province_State\":\"Saskatchewan\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":29059},{\"ControlID\":\"300c623a-e255-430f-ae93-79a86dcee602\",\"Province_State\":\"Nunavut\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":359},{\"ControlID\":\"bfc88ff1-e4b2-43cc-a69a-8576e5b318e7\",\"Province_State\":\"Newfoundland and Labrador\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":997},{\"ControlID\":\"c731ea59-bfe1-4a4b-ad30-d6922dfb4f89\",\"Province_State\":\"Quebec\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":289670},{\"ControlID\":\"6e24e98d-3a83-4797-9e1c-e358136ba66c\",\"Province_State\":\"Northwest Territories\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":47},{\"ControlID\":\"42dfed20-3aad-432d-baee-e4ded41ef762\",\"Province_State\":\"Manitoba\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":32000},{\"ControlID\":\"550912ae-7598-4a8e-8733-e6edf6f4912a\",\"Province_State\":\"Diamond Princess\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":0},{\"ControlID\":\"e34919ec-d615-4915-a8c4-fc315d4b7beb\",\"Province_State\":\"New Brunswick\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":1438},{\"ControlID\":\"b4b21347-f647-4313-bc84-fc4cb23f5735\",\"Province_State\":\"Prince Edward Island\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":136},{\"ControlID\":\"0c488ce9-b08a-4051-97e5-fd93565b2214\",\"Province_State\":\"Repatriated Travellers\",\"Country_Region\":\"Canada\",\"ReportedDate\":\"2021-03-03T00:00:00\",\"DataType\":\"Confirmed\",\"DataValue\":13}]"
+
+api/Canadas
+api/Canadas/{provinceID}/All         
+api/Canadas/{provinceID}/{reportedDate}/All         ex) api/Canadas/35/2021-4-1/All     
+api/Canadas/alpha/{province alpha code}/All
+api/Canadas/alpha/{province alpha code}/{reportedDate}/All           ex) api/Canadas/alpha/ON/2021-4-1/All 
+   # https://www150.statcan.gc.ca/n1/pub/92-195-x/2011001/geo/prov/tbl/tbl8-eng.htm
+
+"[{\"ControlID\":\"a8de6f1e-6306-45cd-b35e-a9e18c8a57a1\",\"PrUid\":35,\"PrName\":\"Ontario\",\"Date\":\"2021-04-01T00:00:00\",\"NumConfirmed\":352460,\"NumProbable\":0,\"NumDeaths\":7389,\"NumTotal\":352460,\"NumToday\":2557,\"Activated\":20875,\"NumTested\":0,\"NumRecover\":324196}]"
+
+
+api/Ontarios
+api/Ontarios/{PHU Number}/ALL
+api/Ontarios/{PHU Number}/{reportedDate}/ALL          ex) api/Ontarios/2265/2021-4-1/ALL 
+api/Ontarios/Name/{PHU Name}/ALL
+api/Ontarios/Name/{PHU Name}/{reportedDate}ALL            api/Ontarios/Name/waterloo/2021-4-1/ALL 
+
+
+"[{\"ControlID\":\"7647a8bd-cc73-4e7f-b6a9-b31aa0bfa102\",\"ReportedDate\":\"2021-04-01T00:00:00\",\"PHU_NAME\":\"WATERLOO REGION\",\"PHU_NUM\":2265,\"ACTIVE_CASES\":292,\"RESOLVED_CASES\":11404,\"DEATHS\":244}]"
